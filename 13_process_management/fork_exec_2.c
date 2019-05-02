@@ -17,7 +17,7 @@ int main(int argc, char *argv[], char *envp[])
     }
     if (pid != 0) {  /* parent */
         printf("I'm the parent. My PID = %d and my child's PID = %d\n", getpid(), pid);
-       while (1);
+	sleep(20);
     }
     else {  /* child */
         printf("I'm the child. My PID = %d\n", getpid());
